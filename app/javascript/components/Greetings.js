@@ -11,17 +11,18 @@ const Greetings = () => {
     dispatch(fetchGreetings());
   }, []);
 
+  console.log('greeting', greeting);
   return (
     <div className="container-fluid">
       <div className="container">
         <div className="card">
+        {loading && <p>Loading...</p>}
           <div className="card-header bg-info text-white">
-            <h2 className="text-center">Greetings</h2>
+            <h2 className="text-center">{`Quote by ${greeting.author}`}</h2>
           </div>
           <div className="card-body text-center">
-            {loading && <p>Loading...</p>}
             {error && <p className="text-danger">{error}</p>}
-            {greeting && <p className="text-success display-3">{greeting}</p>}
+            {greeting && <p className="text-success display-3">{greeting.quote}</p>}
           </div>
         </div>
       </div>
