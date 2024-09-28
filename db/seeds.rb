@@ -8,7 +8,7 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 Message.create(message_text: "Hello, Rails and React!")
-Message.create(message_text: "This is the first rails and react app.")
-Message.create(message_text: "Bonjour, Rails and React!")
-Message.create(message_text: "High five to R and R!")
-Message.create(message_text: "Happy coding with R and R!")
+Message.create(message_text: "This data is coming from the Rails API!")
+Message.create(message_text: "Rails and React are a great combo!")
+Message.create(message_text: "The React component is fetching data from the Rails API. The UI is updated as the user refreshes the page. The data is persisted in the database. And the UI is flexible taking in long sentences to display in the message box.")
+Message.create(message_text: "Happy coding with Rails and React!")
